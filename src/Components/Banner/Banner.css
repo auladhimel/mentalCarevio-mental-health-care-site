@@ -1,0 +1,28 @@
+.slider img{
+    opacity:92%;
+    
+}
+.caption{
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 200px;
+}
+.caption h1,h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.button{
+    margin-top: 30px;
+    padding: 20px 36px;
+    background-color: #EEA676;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: #196560;
+    transition: background-color 0.5s ease;
+}
+.depression-solution{
+    color: #EEA676;
+}
