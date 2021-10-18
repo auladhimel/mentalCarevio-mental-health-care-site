@@ -12,6 +12,7 @@ import Footer from './Components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -29,9 +30,9 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
-            <Route path="/services">
+            <PrivateRoute path="/services">
               <Services></Services>
-            </Route>
+            </PrivateRoute>
             <Route path="/service/:serviceId">
               <ServiceDetail></ServiceDetail>
             </Route>
