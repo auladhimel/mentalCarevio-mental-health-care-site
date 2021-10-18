@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
     console.log('this is props', props);
-    const { name, description, image } = props.service;
+    const { id, name, description, image } = props.service;
 
     return (
         < div className="single-service" >
@@ -14,8 +15,9 @@ const Service = (props) => {
             {/* single service text  */}
             <div className="information">
                 <h3 className="prices">{name}</h3>
-                <p className="description">{description}</p>
+                <p className="description">{description.slice(0, 300)}</p>
                 <button className="button">Read More</button>
+                <Link to={`/service/${id}`}>Read More</Link>
             </div>
         </div >
     );

@@ -15,7 +15,7 @@ const Services = () => {
             <div className="Service-container">
                 {
                     // looping for getting single course component 
-                    services.map(service => <Service service={service}
+                    services.slice(0, 6).map(service => <Service service={service}
                         key={service.id}
                     ></Service>)
                 }
