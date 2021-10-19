@@ -1,0 +1,21 @@
+.footer{
+    font-family: 'Libre Baskerville', serif;
+    background-color: #151616;
+    height: 400px;
+    color: white;
+    padding-top: 50px;
+}
+.mental-carevio{
+    font-family: 'Kaushan Script', cursive;
+}
+.about-footer p,.footer-services li,.address{
+    font-family: 'Exo 2', sans-serif;
+}
+.subscribe button{
+    padding: 20px 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.input{
+    padding: 20px 35px;
+}

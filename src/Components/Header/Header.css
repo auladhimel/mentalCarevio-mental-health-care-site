@@ -5,31 +5,41 @@
     padding-top: 25px;
     padding-bottom: 05px;
 }
+.header h3{
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 5px;
+}
 .header a{
     font-size:larger;
     font-weight: 500;
     color: white;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 22px;
 }
 .links{
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 .links a:hover{
-    border-bottom: 5px solid #EEA676;
     color: #EEA676;
-    padding-bottom: 10px;
-    transition: color 0.5s ease, padding 0.5 ease;
-    transition: border 0.5s ease;
-
+    transition: color 0.5s ease,border 0.5s ease;
 }
 .phone{
     color: white;
+    font-size: 14px;
     padding-top: 14px;
-    margin-left: 150px;
+    margin-left: 40px;
 }
 .phone-icon{
     color: #EEA676;
+}
+button{  
+    border: none;
+    color: white;
+    background-color: #196560;
+}
+.font{
+    font-family: 'Exo 2', sans-serif;
 }

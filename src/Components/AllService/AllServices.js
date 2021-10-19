@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
-import './Services.css';
 
-const Services = () => {
+const AllServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./data.json')
@@ -11,13 +10,13 @@ const Services = () => {
     }, [])
     return (
         <div className="services">
+            <p className="depression-solution fw-bold">AFFORDABLE SERVICES</p>
             <h1 className="professional-psychology">Professional Psychology Therapy
                 <br /> Service You Can Choose</h1>
-            <p className="depression-solution fw-bold">AFFORDABLE SERVICES</p>
             <div className="service-container">
                 {
                     // looping for getting single course component 
-                    services.slice(0, 6).map(service => <Service service={service}
+                    services.map(service => <Service service={service}
                         key={service.id}
                     ></Service>)
                 }
@@ -26,4 +25,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default AllServices;

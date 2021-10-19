@@ -1,24 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Service.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+
+const elementfaArrowRight = <FontAwesomeIcon icon={faArrowRight} />
 const Service = (props) => {
     console.log('this is props', props);
     const { id, name, description, image } = props.service;
 
     return (
         < div className="single-service" >
-            <h2>this is service</h2>
-            <h1></h1>
+
             <div className="image">
                 <img src={image} alt="" />
             </div>
             {/* single service text  */}
             <div className="information">
-                <h3 className="prices">{name}</h3>
+                <h3 className="name">{name}</h3>
                 <p className="description">{description.slice(0, 300)}</p>
-                <button className="button">Read More</button>
-                <Link to={`/service/${id}`}>Read More</Link>
+                <Link to={`/service/${id}`} className="read-details">READ DETAILS &nbsp;{elementfaArrowRight}</Link>
             </div>
+
         </div >
     );
 };
