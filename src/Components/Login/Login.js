@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from 'react';
 
@@ -7,8 +7,12 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
     const { signInWithGoogle } = useAuth();
-
     const [error, setError] = useState('');
+
+    // Redirect to the initial page after login
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/home';
 
     const auth = getAuth();
 
@@ -23,6 +27,19 @@ const Login = () => {
                 setError(error.message);
             })
     }
+
+    // Redirect to the initial page after login
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+                // Redirect to the initial page after login
+                history.push(redirect_url);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+
+    }
     return (
         <div>
             <h2>Please Login</h2>
@@ -33,7 +50,7 @@ const Login = () => {
             <input onClick={processLogin} type="submit" value="Login" />
             <br />
             <p>or</p>
-            <button onClick={signInWithGoogle}>Google Sign In</button>
+            <button onClick={handleGoogleLogin}>Google Sign In</button>
             <br />
             <Link to="/register" >Yet Not Registered?</Link>
         </div>
