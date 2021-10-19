@@ -3,12 +3,16 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadSideVirus, faPhoneAlt, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faHeadSideVirus, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const elementHeadSideVirus = <FontAwesomeIcon icon={faHeadSideVirus} />
-const elementfaPhoneAlt = <FontAwesomeIcon icon={faPhoneAlt} />
-const elementfaArrowCircleRight = <FontAwesomeIcon icon={faArrowCircleRight} />
+const elementfaPaperPlane = <FontAwesomeIcon icon={faPaperPlane} />
+const elementfaFacebookSquare = <FontAwesomeIcon icon={faFacebookSquare} />
+const elementfaTwitter = <FontAwesomeIcon icon={faTwitter} />
+const elementfaInstagram = <FontAwesomeIcon icon={faInstagram} />
+const elementfaLinkedin = <FontAwesomeIcon icon={faLinkedin} />
 const Footer = () => {
     return (
         <div className="footer">
@@ -21,10 +25,10 @@ const Footer = () => {
                         </div>
                         <div>
                             <h4>Follow Us</h4>
-                            <Link to="facebook.com"></Link>
-                            <Link to="instagram.com"></Link>
-                            <Link to="twitter.com"></Link>
-                            <Link to="linkedin.com"></Link>
+                            <Link to="facebook.com">{elementfaFacebookSquare}</Link>
+                            <Link to="instagram.com">{elementfaTwitter}</Link>
+                            <Link to="twitter.com">{elementfaInstagram}</Link>
+                            <Link to="linkedin.com">{elementfaLinkedin}</Link>
                         </div>
                     </div></Col>
                     <Col>
@@ -46,19 +50,19 @@ const Footer = () => {
                         <h4>Contact Info</h4>
                         <div className="address">
                             <address>House no 35, Palmall street, London, England</address>
-                            <p>Email: info@mentalcarevio.com</p>
-                            <p>Support: +1 325 562 3265</p>
-                            <p>Website: www.mentalcarevio.com</p>
+                            <p><span className="contacts">Email: </span> <br /> info@mentalcarevio.com</p>
+                            <p><span className="contacts">Support:</span> <br /> Support: +1 325 562 3265</p>
+                            <p><span className="contacts">Website:</span> <br /> www.mentalcarevio.com</p>
                         </div>
                     </Col>
                     <Col className="subscribe">
                         <h4>Stay In Touch</h4>
                         <input className="input" type="email" placeholder="Email Address" />
-                        <button>Subscribe Now</button>
+                        <button>{elementfaPaperPlane} &nbsp; Subscribe Now</button>
                     </Col>
                 </Row>
                 <hr />
-                <p>Copyright © 2020 Basictheme. All Rights Reserved.</p>
+                <small>Copyright © 2021 <span className="depression-solution">Aulad Himel.</span>  All Rights Reserved.</small>
             </Container>
         </div>
 

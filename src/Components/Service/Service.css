@@ -4,6 +4,9 @@
     margin-bottom: 30px;
     box-shadow: 15px 0px 0px 0px #056C5F;
 }
+.name{
+    color: #056C5F;
+}
 .single-service{
     padding: 20px;
     border-radius: 6px;
