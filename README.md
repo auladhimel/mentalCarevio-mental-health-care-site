@@ -7,6 +7,8 @@
 Click here to visit the site : 
 
 https://mental-carevio.web.app
+or
+https://mental-carevio.firebaseapp.com/home
 ## About Project
 
 - "MENTAL CAREVIO" is a centre for mental health care. This centre has physical existence but if anyone want to get service for their mental problem they can get services by using this web application.  
