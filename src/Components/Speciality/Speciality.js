@@ -1,9 +1,10 @@
 import React from 'react';
 import './Speciality.css';
-
+// speciality component 
 const Speciality = () => {
     return (
         <div>
+            {/* speciality part  */}
             <h1 style={{ color: '#056C5F', marginTop: '80px' }}>Why we are..?</h1>
             <div className="Speciality mb-5 py-5">
                 <div className="single-speciality">

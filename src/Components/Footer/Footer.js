@@ -6,13 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadSideVirus, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
+// icons 
 const elementHeadSideVirus = <FontAwesomeIcon icon={faHeadSideVirus} />
 const elementfaPaperPlane = <FontAwesomeIcon icon={faPaperPlane} />
 const elementfaFacebookSquare = <FontAwesomeIcon icon={faFacebookSquare} />
 const elementfaTwitter = <FontAwesomeIcon icon={faTwitter} />
 const elementfaInstagram = <FontAwesomeIcon icon={faInstagram} />
 const elementfaLinkedin = <FontAwesomeIcon icon={faLinkedin} />
+// footer component 
 const Footer = () => {
     return (
         <div className="footer">
@@ -20,6 +21,7 @@ const Footer = () => {
                 <Row>
                     <Col><div className="about-footer">
                         <div>
+                            {/* about  */}
                             <h4 className="mental-carevio">{elementHeadSideVirus} Mental Carevio</h4>
                             <p>We offer several services that fall outside the scope of item writing. These services can be provided for clients who have the capacity to design and execute assessment systems.</p>
                         </div>
@@ -62,6 +64,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <hr />
+                {/* copyright footer  */}
                 <small>Copyright © 2021 <span className="depression-solution">Aulad Himel.</span>  All Rights Reserved.</small>
             </Container>
         </div>

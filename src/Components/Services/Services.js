@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 import './Services.css';
-
+// service component 
 const Services = () => {
     const [services, setServices] = useState([]);
+    // loading data 
     useEffect(() => {
         fetch('./data.json')
             .then(res => res.json())

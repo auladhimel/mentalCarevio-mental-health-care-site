@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './Team.css';
-
+// icons 
 const elementfaArrowRight = <FontAwesomeIcon icon={faArrowRight} />
-
+// team component 
 const Team = (props) => {
     const { id, name, expertise, image, email, phone } = props.team;
     return (

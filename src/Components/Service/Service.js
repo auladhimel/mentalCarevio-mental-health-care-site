@@ -4,15 +4,13 @@ import './Service.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-
+// icons 
 const elementfaArrowRight = <FontAwesomeIcon icon={faArrowRight} />
 const Service = (props) => {
-    console.log('this is props', props);
+    // destructuring 
     const { id, name, description, image } = props.service;
-
     return (
         < div className="single-service" >
-
             <div className="image">
                 <img src={image} alt="" />
             </div>
@@ -22,7 +20,6 @@ const Service = (props) => {
                 <p className="description">{description.slice(0, 300)}</p>
                 <Link to={`/service/${id}`} className="read-details">READ DETAILS &nbsp;{elementfaArrowRight}</Link>
             </div>
-
         </div >
     );
 };

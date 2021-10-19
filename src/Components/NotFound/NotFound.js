@@ -4,7 +4,7 @@ import './NotFound.css';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
+// icons 
 const elementfaArrowRight = <FontAwesomeIcon icon={faArrowCircleRight} />
 
 const NotFound = () => {

@@ -1,21 +1,17 @@
 import React from 'react';
 import { Button, Carousel } from 'react-bootstrap';
-import firstBanner from '../../images/banner_1.jpg';
-import secondBanner from '../../images/banner_2.jpg';
-import thirdBanner from '../../images/banner_3.jpg';
-import fourthBanner from '../../images/banner_4.jpg';
-import fifthBanner from '../../images/banner_5.jpg';
-import sixthBanner from '../../images/banner_6.jpg';
+
 
 import './Banner.css';
-
+// banner component 
 const Banner = () => {
     return (
+        // slider 
         <Carousel className="slider">
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={firstBanner}
+                    src="https://i.ibb.co/vqxx5qc/banner-1.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -30,7 +26,7 @@ const Banner = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={secondBanner}
+                    src="https://i.ibb.co/rx1XR2r/banner-2.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -45,7 +41,7 @@ const Banner = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={thirdBanner}
+                    src="https://i.ibb.co/1LkgYNM/banner-3.jpg"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
@@ -60,7 +56,7 @@ const Banner = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={fourthBanner}
+                    src="https://i.ibb.co/6HSC8wq/banner-4.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -75,7 +71,7 @@ const Banner = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={fifthBanner}
+                    src="https://i.ibb.co/XDn5D9c/banner-5.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -90,7 +86,7 @@ const Banner = () => {
             <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={sixthBanner}
+                    src="https://i.ibb.co/SRD0K7J/banner-6.jpg"
                     alt="Second slide"
                 />
                 <Carousel.Caption>

@@ -1,3 +1,4 @@
+/* speciality style  */
 .Speciality{
     color: #056C5F;
     font-family: 'Exo 2', sans-serif;
@@ -12,7 +13,7 @@
     border-radius: 50%;
     border: 2px solid white;
 }
-
+ /* single speciality style  */
 .single-speciality{
     border: 1px solid rgb(204, 204, 204);
     display: flex;

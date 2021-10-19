@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Team from '../Team/Team';
 import './OurTeam.css';
-
+// our team component 
 const OurTeam = () => {
+    // data loading 
     const [teams, setTeams] = useState([]);
     useEffect(() => {
         fetch('./expert.json')

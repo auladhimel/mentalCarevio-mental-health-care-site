@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 
+// Allservice component 
 const AllServices = () => {
+    // data loading 
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('./data.json')
@@ -15,7 +17,7 @@ const AllServices = () => {
                 <br /> Service You Can Choose</h1>
             <div className="service-container">
                 {
-                    // looping for getting single course component 
+                    // looping for getting single service component 
                     services.map(service => <Service service={service}
                         key={service.id}
                     ></Service>)

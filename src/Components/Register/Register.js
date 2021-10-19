@@ -2,8 +2,10 @@ import React from 'react';
 import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, FacebookAuthProvider } from "firebase/auth";
 import { useState } from 'react';
 import './Register.css';
+// icon 
 const facebookProvider = new FacebookAuthProvider();
 const Register = () => {
+    // using hooks and states  
     const [user, setUser] = useState({});
     const auth = getAuth();
     const [name, setName] = useState('');
@@ -11,7 +13,7 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
-
+    // handle registration 
     const handleRegistration = e => {
         e.preventDefault();
         if (password.length < 6) {
@@ -20,9 +22,8 @@ const Register = () => {
         }
         isLogin ? processLogin(email, password) : createNewUser(email, password);
     }
-
+    // new user creating 
     const createNewUser = (email, password) => {
-
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
@@ -35,14 +36,13 @@ const Register = () => {
             })
     }
 
-
-
+    // profile updating 
     const setUserName = () => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => {
             })
     }
-
+    // login process by email and password 
     const processLogin = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -54,6 +54,7 @@ const Register = () => {
                 setError(error.message);
             })
     }
+    // handle change update 
     const handleNameChange = e => {
         setName(e.target.value);
     }
@@ -68,9 +69,9 @@ const Register = () => {
     }
 
     return (
+        // registration page 
         <div className="registration-page">
             <form onSubmit={handleRegistration}>
-
                 <h3>Please {isLogin ? 'Login' : 'Register'}</h3>
                 {!isLogin && <div className="row mb-3">
                     <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
@@ -96,14 +97,14 @@ const Register = () => {
                         <div className="form-check">
                             <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
                             <label className="form-check-label registered" htmlFor="gridCheck1">
-                                Already Registered?
+                                Already Registered..?
                             </label>
                         </div>
                     </div>
                 </div>
                 <div className="row mb-3 text-danger ms-5">{error}</div>
+                {/* conditional rendering  */}
                 <button type="submit" className="btn button">{isLogin ? 'Login' : 'Register'}</button>
-
             </form>
         </div>
     );

@@ -1,4 +1,4 @@
-
+/* single team style  */
 .single-team{
     border: 1px solid rgb(202, 202, 202);
     border-radius: 5px;
@@ -12,6 +12,7 @@
     box-shadow: 15px 0px 0px 0px #EEA676;
 
 }
+/* hover style  */
 .single-team:hover{
     border: 1px solid #EEA676;
     box-shadow: 10px 10px 0px 0px #056C5F;
@@ -23,6 +24,7 @@
     box-shadow: 15px 0px 0px 0px #056C5F;
     transition: 0.5s ease;
 }
+/* button style  */
 .name, .read-details{
     color: #EEA676;
 }

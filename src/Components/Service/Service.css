@@ -1,3 +1,4 @@
+/* service image style  */
 .image img{
     width: 50%;
     border-radius: 50%;
@@ -7,6 +8,7 @@
 .name{
     color: #056C5F;
 }
+/* single service style  */
 .single-service{
     padding: 20px;
     border-radius: 6px;
@@ -23,6 +25,7 @@
 .single-service p {
     color: rgb(109, 109, 109);
 }
+/* hover style  */
 .single-service:hover {
     background-color: #056C5F;
     color: white;
@@ -45,6 +48,7 @@
     transition: 0.8s ease;
 
 }
+/* button style  */
 .read-details{
     text-decoration: none;
     color: #056C5F;

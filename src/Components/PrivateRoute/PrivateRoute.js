@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-
+// creating private route 
 const PrivateRoute = ({ children, ...rest }) => {
     const { user } = useAuth();
     return (
+        // redirecting to login page 
         <Route
             {...rest}
             render={({ location }) => user.displayName ?
@@ -15,11 +16,9 @@ const PrivateRoute = ({ children, ...rest }) => {
                         state: { from: location }
                     }}
                 >
-
                 </Redirect>
             }
         >
-
         </Route>
     );
 };

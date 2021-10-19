@@ -1,3 +1,4 @@
+// firbase config file 
 const firebaseConfig = {
     apiKey: "AIzaSyDao6S2MLZ-Lldn9nhtQ9zPCFRwnWFEqfo",
     authDomain: "mental-carevio.firebaseapp.com",
