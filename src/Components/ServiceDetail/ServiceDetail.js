@@ -10,6 +10,7 @@ const ServiceDetail = () => {
     const [detail, setDetail] = useState({});
 
     console.log(service);
+
     console.log(serviceId);
     const { id, name } = service;
     // loading data 
@@ -19,17 +20,20 @@ const ServiceDetail = () => {
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
+
+    const serviceDetail = service.find(service => service.id === serviceId);
+    console.log(serviceDetail);
     // dependency data loading 
-    useEffect(() => {
-        const singleService = service.find(service => service.id === serviceId)
-        setDetail(service);
-        console.log(singleService);
-    }, [service])
+    // useEffect(() => {
+    //     const singleService = service.find(service => service.id === serviceId)
+    //     setDetail(service);
+    //     console.log(singleService);
+    // }, [service])
 
     return (
         <div className="service-details">
-            <h1>Service detail comming {serviceId}</h1>
-            <p></p>
+            <h1>Know more about {serviceId}</h1>
+
         </div>
     );
 };

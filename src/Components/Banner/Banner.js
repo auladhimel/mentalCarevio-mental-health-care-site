@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button, Carousel } from 'react-bootstrap';
-
-
 import './Banner.css';
 // banner component 
 const Banner = () => {
