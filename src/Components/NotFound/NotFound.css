@@ -4,9 +4,10 @@
     display: block;
     font-weight: 900;
     margin: 50px 50px;  
+    margin-top: 80px;
 }
 .not-found img{
-    width: 50%;
+    width: 45%;
 }
 /* button style  */
 .button{

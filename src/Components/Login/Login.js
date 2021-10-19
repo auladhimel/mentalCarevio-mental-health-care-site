@@ -1,9 +1,14 @@
 import React from 'react';
+import './Login.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from 'react';
 
 import useAuth from '../../hooks/useAuth';
+const elementfaUser = <FontAwesomeIcon icon={faUser} />
+const elementfaArrowCircleRight = <FontAwesomeIcon icon={faArrowCircleRight} />
 
 const Login = () => {
     const { signInWithGoogle } = useAuth();
@@ -41,18 +46,14 @@ const Login = () => {
 
     }
     return (
-        <div>
-            <h2>Please Login</h2>
-            <input type="email" />
+
+        <div className="login-page">
+            <h2>Login With Google Here</h2>
+            <h1>{elementfaUser}</h1>
+
+            <button onClick={handleGoogleLogin}>Google Sign In {elementfaArrowCircleRight}</button>
             <br />
-            <input type="password" />
-            <br />
-            <input onClick={processLogin} type="submit" value="Login" />
-            <br />
-            <p>or</p>
-            <button onClick={handleGoogleLogin}>Google Sign In</button>
-            <br />
-            <Link to="/register" >Yet Not Registered?</Link>
+            <Link to="/register" >New to Mental Carevio?</Link>
         </div>
     );
 };

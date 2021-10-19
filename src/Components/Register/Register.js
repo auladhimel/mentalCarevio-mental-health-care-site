@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, FacebookAuthProvider } from "firebase/auth";
 import { useState } from 'react';
+import './Register.css';
 const facebookProvider = new FacebookAuthProvider();
 const Register = () => {
     const [user, setUser] = useState({});
@@ -67,10 +68,10 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className="registration-page">
             <form onSubmit={handleRegistration}>
 
-                <h3 className="text-primary">Please {isLogin ? 'Login' : 'Register'}</h3>
+                <h3>Please {isLogin ? 'Login' : 'Register'}</h3>
                 {!isLogin && <div className="row mb-3">
                     <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
                     <div className="col-sm-10">
@@ -94,14 +95,14 @@ const Register = () => {
                     <div className="col-sm-10 offset-sm-2">
                         <div className="form-check">
                             <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
-                            <label className="form-check-label" htmlFor="gridCheck1">
+                            <label className="form-check-label registered" htmlFor="gridCheck1">
                                 Already Registered?
                             </label>
                         </div>
                     </div>
                 </div>
-                <div className="row mb-3 text-danger">{error}</div>
-                <button type="submit" className="btn btn-primary">{isLogin ? 'Login' : 'Register'}</button>
+                <div className="row mb-3 text-danger ms-5">{error}</div>
+                <button type="submit" className="btn button">{isLogin ? 'Login' : 'Register'}</button>
 
             </form>
         </div>

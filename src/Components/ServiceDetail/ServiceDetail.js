@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './ServiceDetail.css';
 
 const ServiceDetail = () => {
 
@@ -25,7 +26,7 @@ const ServiceDetail = () => {
     }, [service])
 
     return (
-        <div>
+        <div className="service-details">
             <h1>Service detail comming {serviceId}</h1>
             <p></p>
         </div>

@@ -13,9 +13,9 @@ const elementfaArrowCircleRight = <FontAwesomeIcon icon={faArrowCircleRight} />
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <Navbar>
+        <Navbar >
 
-            <Navbar className="header mx-auto">
+            <Navbar fixed="top" className="header mx-auto">
                 <Container>
                     <Navbar.Brand href="/home"><h3>{elementHeadSideVirus} Mental Carevio</h3></Navbar.Brand>
                     <Nav className="links">

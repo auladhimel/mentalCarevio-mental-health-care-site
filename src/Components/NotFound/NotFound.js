@@ -15,7 +15,7 @@ const NotFound = () => {
     }
     return (
         // not found page text 
-        <div className="not-found">
+        <div className="not-found pt-5">
             <h4>Oops ! Sorry... We Can't Find That Page.
             </h4>
             <p>Take a moment and Try using the button below to go to main of the site</p>

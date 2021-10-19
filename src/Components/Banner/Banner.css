@@ -1,9 +1,8 @@
 .slider{
-    margin-top: -8px;
+    margin-top: 100px;
 }
 .slider img{
-    opacity:92%;
-    
+    opacity:92%;  
 }
 .caption{
     justify-content: left;

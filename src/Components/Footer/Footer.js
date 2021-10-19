@@ -21,7 +21,7 @@ const Footer = () => {
                     <Col><div className="about-footer">
                         <div>
                             <h4 className="mental-carevio">{elementHeadSideVirus} Mental Carevio</h4>
-                            <p>Waters divided said aims kind seicond winged form it tree after female the deep at itself creepeth land bring place day sea dont caus may thing open who their midst to seas</p>
+                            <p>We offer several services that fall outside the scope of item writing. These services can be provided for clients who have the capacity to design and execute assessment systems.</p>
                         </div>
                         <div>
                             <h4>Follow Us</h4>
