@@ -1,12 +1,19 @@
 /* slider style  */
 .slider{
     margin-top: 100px;
+    height: 500px;
+    background-image: url(https://i.ibb.co/vqxx5qc/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
 }
 .slider img{
     opacity:92%;  
 }
 /* caption style  */
 .caption{
+    padding-top: 100px;
+    padding-left: 100px;
     justify-content: left;
     text-align: left;
     margin-bottom: 200px;
