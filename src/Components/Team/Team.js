@@ -20,7 +20,7 @@ const Team = (props) => {
                 <hr />
                 <p className="description">{email}</p>
                 <p className="description">{phone}</p>
-                <Link to={`/service/${id}`} className="read-details">READ DETAILS &nbsp;{elementfaArrowRight}</Link>
+                <Link to={`/service/${id}`} className="read-details">KNOW MORE &nbsp;{elementfaArrowRight}</Link>
             </div>
 
         </div >

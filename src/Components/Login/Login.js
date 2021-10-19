@@ -32,7 +32,7 @@ const Login = () => {
     const handleGoogleLogin = () => {
         signInWithGoogle()
             .then(result => {
-                // Redirect to the initial page after login
+                // Redirect to the initial page 
                 history.push(redirect_url);
             })
             .catch(error => {

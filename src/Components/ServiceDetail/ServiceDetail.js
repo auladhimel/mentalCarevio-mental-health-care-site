@@ -4,7 +4,10 @@ import { useParams } from 'react-router';
 const ServiceDetail = () => {
 
     const { serviceId } = useParams();
-    const [service, setService] = useState({});
+    const [service, setService] = useState([]);
+    const [detail, setDetail] = useState({});
+
+    console.log(service);
     console.log(serviceId);
     const { id, name } = service;
 
@@ -14,11 +17,17 @@ const ServiceDetail = () => {
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
-    console.log(service);
+
+    useEffect(() => {
+        const singleService = service.find(service => service.id === serviceId)
+        setDetail(service);
+        console.log(singleService);
+    }, [service])
+
     return (
         <div>
             <h1>Service detail comming {serviceId}</h1>
-            <p>{name}</p>
+            <p></p>
         </div>
     );
 };
