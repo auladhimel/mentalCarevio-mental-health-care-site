@@ -1,0 +1,11 @@
+.appointment-banner{
+    background-image: url(../../images/banner_5.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -10px;
+}
+.appointment-banner h1{
+    color: white;
+    padding-top: 150px;
+}
