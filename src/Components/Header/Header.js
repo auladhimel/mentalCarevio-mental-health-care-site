@@ -22,16 +22,17 @@ const Header = () => {
                         <NavLink to="/home">Home</NavLink>
                         <NavLink to="/services">Services</NavLink>
                         <NavLink to="/about">Pricing</NavLink>
+                        <NavLink to="/team">Psychatrists</NavLink>
                         <NavLink to="/login">Login</NavLink>
                         <NavLink to="/register">Register</NavLink>
-                        {user?.displayName && <span className="font" style={{ backgroundColor: '#EEA676', color: 'white', padding: '5px', borderRadius: '2px', marginLeft: '50px' }}>{user.displayName} </span>}
+                        {user?.displayName && <span className="font" style={{ backgroundColor: '#EEA676', color: 'white', padding: '5px', marginBottom: '0px', marginTop: '5px', borderRadius: '2px', marginLeft: '10px', fontSize: '18px', fontWeight: 'bold' }}>{user.displayName} </span>}
                         {
                             user?.displayName && <button className="font" onClick={logOut}>Logout {elementfaArrowCircleRight}</button>}
                     </Nav>
                     <Nav>
                         <div className="phone">
                             <p><span className="phone-icon">{elementfaPhoneAlt} </span>
-                                +1 (202) 588-6500</p>
+                                +1588-6500</p>
                         </div>
                     </Nav>
                 </Container>

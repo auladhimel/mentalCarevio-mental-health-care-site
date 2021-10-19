@@ -1,8 +1,8 @@
 .header{
     display: flex;
     background-color: #196560;
-    padding-left: 50px;
-    padding-top: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
     padding-bottom: 05px;
     width: 100%;
 }
@@ -20,7 +20,7 @@
 }
 .links{
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .links a:hover{
